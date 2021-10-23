@@ -1,0 +1,97 @@
+@media screen and (min-width: 768px){
+    *{
+        display:block;
+        
+    }
+/*---------------header section------------ */
+title{
+    display: none;
+}
+    header>nav>ul{
+        display: flex;
+    }
+    header>nav>ul{
+        background-color: rgb(127, 7, 212);
+    }
+    header>nav>ul>a{
+        
+        padding: 1em 2em;
+        justify-content: center;
+        list-style: none;
+        color: ivory;
+    }
+
+
+/*---------------main section------------ */
+    .site-banner>img{
+        width: 100%;
+    }
+    main>h1{
+        width: 100%;
+    }
+     .whey{
+         display: flex;         
+     } 
+     .whey-proteins{
+        margin:.5em;
+        padding: .5em;
+        border: 2px solid black;
+        width:15%;
+     }
+     .whey-proteins img{
+         height: 150px;
+         width: 150px;
+         padding-left: 1em;
+         
+     }
+     .column{
+        width: 100%;
+         display: flex;
+         margin-top: .5em;           
+     }
+
+     .column .brand{
+        font-weight: bold;
+     }
+     .column .price{
+         text-align: right;
+     }
+         
+     
+     .whey-proteins button{
+         background-color: hotpink;
+         border-radius: 10%;
+         margin-top: 4px;
+         padding: 3px;
+     }
+    
+   
+     /* --------------------Footer Section--------------- */
+     footer{
+        width: 100% ;
+        position: fixed;
+        background-color: rgb(127, 7, 212);
+        
+    }  
+    footer>h5{
+        padding: 15px;
+        color: ivory;
+    }
+    footer>h3{
+        padding: 15px;
+        color: ivory;
+    }
+
+/* <--------------order.html--------------------> */
+ .userorder{
+     width: 300px;
+     text-align: center;
+ }
+
+
+    }
+ 
+ 
+
+
+

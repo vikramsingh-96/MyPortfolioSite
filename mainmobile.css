@@ -1,0 +1,160 @@
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .site-banner>img{
+        width: 100%;
+    }
+    header>nav>ul{
+        display: flex;
+    }
+    header>nav>ul{
+        background-color: rgb(127, 7, 212);
+    }
+    header>nav>ul>a{
+        
+        padding: 1em 2em;
+        justify-content: center;
+        list-style: none;
+        color: ivory;
+    }
+    
+    main{
+        max-width: 100%;
+        background-color: rgb(241, 235, 235);
+        padding: 1em;
+        max-height: 100%;
+    }
+    #site-desc{
+        background-color: ivory;
+        border: black;
+        border-radius: 10%;
+        color: black;
+    }
+    .catalog{
+        margin-top: 1.5em ;
+        padding: 6px 0 6px 0;
+        display: flex;
+        background-color: rgb(127, 7, 212);
+    }
+    .cat1{
+        flex: 50%;
+        list-style-type: none;
+        color: whitesmoke; 
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+    }
+    .cat2{
+        flex: 50%;
+        list-style-type: none;
+        color: whitesmoke; 
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+    
+    }
+    /* -------------Products Page----------------- */
+    .whey{
+        display: flex;
+        justify-content: center;
+        }
+    .whey-proteins{
+           border:1px solid black;
+           width: 35%;
+           padding: 1em;
+           margin: .5em;
+    }
+    .whey-proteins img{
+        height: 150px;
+        width: 100%;
+    
+    }
+    .column{
+        display: flex;
+        width: 100%;
+    }
+    
+    .column .brand{
+        font-weight: bold;
+    }
+    .column .price{
+        flex: 1;
+        text-align: right;
+    }
+    .details{
+        background-color: cornsilk;
+        padding: .5em 0 .5em 0;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+    }
+    .whey-proteins button{
+        margin-top: .5em;
+        padding: 5px;
+        background-color: hotpink;
+        border: 1px solid black;
+        border-radius: 5%;
+        transition-duration: .5s;
+        cursor: pointer;
+    }
+    .whey-proteins button:hover{
+        background-color: wheat;
+        color:teal;
+            
+    }
+    
+    /*--------------------------- Footer section------------------- */
+    footer{
+        width: 100% ;
+        position: fixed;
+        background-color: rgb(127, 7, 212);
+        
+    }  
+    footer>h5{
+        padding: 5px;
+        color: ivory;
+    }
+    footer>h3{
+        padding: 5px;
+        color: ivory;
+    }
+    
+    /* --------------------Order.html------------------------- */
+    .userorder{
+        width: 155px;
+        padding: 1em 0px 1em 0em;
+        background-color: whitesmoke;
+        text-align: center;
+        margin: auto;
+        
+        }
+     
+    .userorder img{
+        height: 80px;
+        border: 1px solid black;
+        border-radius: 10%;
+    
+    }    
+    .userorder .column1{
+        display: flex;
+        padding: 1em 0 1em 0;
+    }
+    .userorder .column1 .brand{
+        text-align: left;
+        padding-left: 10px;
+    }
+    .userorder .column1 .price{
+        padding-right: 20px;
+        font-weight: 900;
+        font-size: larger;
+    }
+    .userorder .desc{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+.Adddress-details{
+    border:  1px dotted black;
+
+}
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Order</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainmobile.css">
+    <link rel="stylesheet" href="maindesktop.css">
+    <!-- <script src="orderscript.js" type="text/javascript"></script> -->
+</head>
+<body>
+    <header><nav>
+    <ul>
+        <a href="mysupplements.html"> <li>Home</li></a>
+        <a href="products.html"> <li>Products</li></a>
+        <a href="Contact.html"><li>Contact Us</li></a>
+    </ul>
+    </nav></header>
+    <main>
+        <h2 style="text-align: center;">Order Summary</h2>
+        <div class="userorder">
+            <img src="" alt="">
+            <div class="column1">
+                <div class="brand"></div>
+                <div class="price"></div>
+            </div>
+            <p class="desc"></p>
+
+        </div>
+        <form action="file:///C:/Users/vikram.u.singh/Desktop/mybot/order.html/api/post" method="POST">
+            <section class="Adddress-details">
+                <h4>Shipping Details</h4>
+                <label for="fullName">Name</label>
+                <input type="text" id="fullName" name="fullName" required ><br>
+                <label for="addr">Address</label>
+                <input type="text" id="addr" name="address" required ><br>
+                <label for="num">Phone number</label> 
+                <input type="tel" id="num" name="number" placeholder="+91-" required><br>
+                <label for="carddetails">Credir/Debit card details</label>
+                <input type="tel" id="carddetails" placeholder="1234-2344-1213-2412"><br>
+                <input type="submit" value="submit">
+            </section>  
+        </form>
+               
+
+    </main>
+    <footer>
+        <h5>&copy;Supplementskart Pvt LTD</h5>
+        <h3>All kind of supplemets available</h3>
+    </footer>
+    
+</body>
+<script>
+    
+    window.addEventListener("DOMContentLoaded", function(e){
+        const order= localStorage.getItem("order");
+        if(order)
+        {
+            const wheyOrder = JSON.parse(order);
+
+            const pro = document.querySelector(".userorder");
+            const brand = pro.querySelector(".brand");
+            const price =pro.querySelector(".price");
+            const desc = pro.querySelector(".desc");
+
+            brand.innerHTML = wheyOrder.brand;
+            price.innerHTML = wheyOrder.price;
+            desc.innerHTML= wheyOrder.details;
+            
+            const img = pro.querySelector('img');
+            img.setAttribute("src",`images/${wheyOrder.id}.png`); 
+            img.setAttribute("alt", wheyOrder.brand);
+           }
+
+    });
+</script>
+</html>
